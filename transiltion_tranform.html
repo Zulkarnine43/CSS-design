@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition & transform</title>
+</head>
+<style>
+ 
+    .main{
+        background-color: tomato;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        /* transition-property: width;
+        transition-duration: 2s;
+        transition-delay: 1s;
+        transition-timing-function: ease-in-out;
+         transition: width 2s linear 1s;
+        transition: height 2s; */
+        transition: width 2s , transform 2s ;
+    }
+   .main:hover{
+       width: 400px;
+       height: 400px;
+       transform: rotate(360deg);
+    }
+
+    /* h1{
+        text-align: center;
+        font-size: 2.5rem;
+        transition: font-size;
+    }
+    h1:hover{
+        font-size: 3rem;
+    } */
+</style>
+<body>
+    <div class="main">
+        <h1>Bangladesh</h1>
+    </div>
+</body>
+</html>

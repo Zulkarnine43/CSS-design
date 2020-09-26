@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Class</title>
+<style>
+    a:hover{
+        color: green;
+    }
+    input{
+        padding: 10px;
+        font-size: 1rem;
+        width: 150px;
+
+    }
+    input:focus{
+        background-color: red;
+    }
+    p::first-letter
+    {
+        color: red;
+        font-size: 3rem;
+    }
+    span::after
+    {
+        content: '';
+        width: 50%;
+        height: 20px;
+        background-color: black;
+        display: inline-block;
+    }
+
+    span::before
+    {
+        content: '';
+        width: 50%;
+        height: 20px;
+        background-color: black;
+        display: inline-block;
+    }
+    ::selection{
+        color: tomato;
+        background-color: thistle;
+    }
+    .demo p:nth-child(2){
+  background: black;
+  color: white;
+    }
+    input::placeholder{
+        color: green !important;
+    }
+
+</style>
+</head>
+<body>
+    <a href="#">Tutorial</a>
+    <a href="#">Home</a>
+
+    <input type="text">
+<p>Hi Bangladesh</p>
+<span>Hi Bangladesh</span>
+
+<div class="demo">
+    <p>Amet dolor duo diam ipsum sed, dolores ipsum voluptua dolor.</p>
+    <p>Amet dolor duo diam ipsum sed, dolores ipsum voluptua dolor.</p>
+    <p>Amet dolor duo diam ipsum sed, dolores ipsum voluptua dolor.</p>
+
+</div>
+</body>
+</html>

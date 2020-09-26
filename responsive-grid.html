@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .header{
+            background-color: coral;
+            color: white;
+            padding: 1% 5%;
+            text-align: center;
+        }
+        .nav-menu{
+            padding: 1% 5%;
+            background-color: #39a4ac;
+        }
+        .nav-menu a{
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px;
+            display: block;
+        }
+        .main{
+            padding: 1% 5%;
+            background-color: turquoise;
+        }
+        .aside{
+            padding: 1% 5%;
+            background-color: #39a4ac;
+            text-align: center;
+        }
+        .footer{
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.8rem;
+
+        }
+        .col-1{width: 8.33%;}
+        .col-2{width: 16.66%;}
+        .col-3{width: 25%;}
+        .col-4{width: 33.33%;}
+        .col-5{width: 41.66%;}
+        .col-6{width: 50%;}
+        .col-7{width: 58.33%;}
+        .col-8{width: 66.66%;}
+        .col-9{width: 75%;}
+        .col-10{width: 83.33%;}
+        .col-11{width: 91.66%;}
+        .col-12{width: 100%;}
+        [class*="col-"]{
+            float: left;
+            padding: 10px;
+        }
+        .row::after{
+            content: '';
+            clear: both;
+            display: table;
+        }
+
+        @media screen and (max-width: 768px) {
+            [class*="col-"]{
+            width: 100%;
+        }
+        .nav-menu a{
+            text-align: center;
+            background-color: aqua;
+            margin: 10px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+     <h1>Zulkar Nine</h1>
+    </div>
+    <div class="row">
+   <div class="nav-menu col-2">
+<a href="#">Home</a>
+<a href="#">Tutorial</a>
+<a href="#">Contact</a>
+   </div>
+
+   <div class="main col-7">
+  <h1>I am web designer</h1>
+  <p>Et sit sadipscing diam sit consetetur dolor, sea stet diam et stet. Et sit dolor rebum erat, sit sadipscing aliquyam.</p>
+   <p>Like een that wassailers sight charms mirth given ee, resolved to condole could to his like. That knew whilome lowly.</p>
+</div>
+
+<div class="aside col-3">
+    <h1>I am web designer</h1>
+    <p>Et sit sadipscing diam sit consetetur dolor, sea stet diam et stet. Et sit dolor rebum erat, sit sadipscing aliquyam.</p>
+     <p>Like een that wassailers sight charms mirth given ee, resolved to condole could to his like. That knew whilome lowly.</p>
+  </div>
+    </div>
+
+    <div class="footer">
+        <h1> &copy; Zulkar Nine 2020</h1>
+       </div>
+</body>
+</html>
