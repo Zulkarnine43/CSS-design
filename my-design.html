@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>myblog</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="{{url('public/asset/css/myblog.css')}}" rel="stylesheet">
+<style>
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Fira Sans', sans-serif;
+}
+
+
+
+/* for upper header start */
+.header1-container{
+	background-color: #000000;
+	display: flex;
+	padding: 20px;
+	text-align: center;
+}
+
+.header-link{
+	font-size: 15px;
+	margin-left:40px;
+}
+.header-link i{
+padding: 5px;
+}
+
+.header-link i:hover{
+background-color:cadetblue;
+}
+.search-box{
+	padding: 0 0 0 15%;
+}
+
+.header-contact{
+	margin-left:20%;
+	color: white;
+}
+
+/* for upper header end */
+
+
+/* for navbar start */
+.navbar{
+            background-color: #40868b;
+            padding: 1% 7%;
+            text-align: center;
+        }
+        .navbar a{
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 10px 20px;
+            cursor: pointer;
+
+        }
+        .dropdown-container{
+            display: inline;
+            position: relative;
+        }
+
+        .dropdown-content {
+           position: absolute;
+           top: 30px;
+           right: 0px;
+           background-color: #40868b;
+           text-align: left;
+           min-width: 100px;
+           display: none;
+        }
+        .dropdown-content a{
+           display: block;
+        }
+
+        .dropdown-content a:hover{
+            background-color: gray;
+           display: block;
+        }
+
+        .dropdown-container:hover .dropdown-content{
+           display: block;
+        }
+/* for navbar end */
+
+.slid-img img{
+	height:400px;
+	width: 100%;
+}
+
+.service{
+	font-size: 25px;
+	background-color: wheat;
+	text-align: center;
+}
+
+
+/* Card design start */
+.card-container{
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: wheat;
+            padding: 20px 0px;
+            justify-content: center;
+            align-items: center;
+
+        }
+.card{
+    width: 300px;
+    margin: 10px;
+    box-sizing: border-box;
+    box-shadow:1px 2px 4px black ;
+
+}
+.img-style{
+    width: 100%;
+}
+.card-body{
+    padding:5px;
+    background-color: #761fBc;
+}
+.card-title{
+    font-size: 2rem;
+    text-align: center;
+}
+.card-body .card-content{
+    text-align:justify;
+    line-height: 1.5;
+    color: white;
+}
+.card:hover{
+    box-shadow:6px 12px 10px white ;
+}
+
+/*card design end*/
+
+
+.row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .column{
+        flex: 15%;
+		padding: 10px;
+		border: 1px solid black;
+    }
+
+
+    @media screen and (max-width: 992px) {
+            .column{
+                flex:50%;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .row{
+               flex-direction: column;
+            }
+		}
+
+
+/* footer starts from here  */
+.footer{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+
+}
+
+.footer-menu a{
+    display: block;
+    margin: 15px 0;
+    font-size: 1rem;
+}
+
+.footer-menu a:hover{
+    color: gray;
+}
+
+/* footer ends here  */
+
+
+
+</style>
+
+</head>
+<body>
+	<div class="main-container">
+	  <div class="header1-container">
+	  
+		<div class="header-link">
+	  <i class="fa fa-facebook" style="color:  #3b5998;" aria-hidden="true"></i>
+	  <i class="fa fa-youtube-play" style="color: #c4302b;" aria-hidden="true"></i>
+	  <i class="fa fa-github" aria-hidden="true" style="color: blanchedalmond;"></i>
+	  <i class="fa fa-linkedin" style="color:  #3b5998;" aria-hidden="true"></i>
+	  </div>
+
+	  
+		<div class="search-box">
+			<input class="search-txt" type="text" name="" placeholder="Type to search"/>
+			<a class="search-btn" href="#">
+				<i class="fa fa-search"></i>
+			</a>
+			</div>
+
+			
+
+	  <div class="header-contact">
+		  <a>✆+8801989419776</a>
+		  <a>📧zns601@gmail.com</a>
+	  </div>
+	  </div>
+
+	  <div class="navbar">
+
+		<a href="">Home</a>
+
+       <div class="dropdown-container">
+        <a href="">Pages^</a>
+       <div class="dropdown-content">
+        <a href="">Page1</a>
+        <a href="">Page2</a>
+       </div>
+	   </div>
+	   
+
+	   <div class="dropdown-container">
+        <a href="">Features^</a>
+       <div class="dropdown-content">
+        <a href="">Featur1</a>
+        <a href="">Featur2</a>
+       </div>
+	   </div>
+	   
+
+	   <div class="dropdown-container">
+        <a href="">Blog^</a>
+       <div class="dropdown-content">
+        <a href="">Blog1</a>
+        <a href="">Blog2</a>
+       </div>
+	   </div>
+	   <a href="">About us</a>
+	   <a href="">Contact</a>
+
+	</div>
+	<div class="slid-img">
+		<img src="black.jpg">
+	</div>
+
+
+	<div class="service">
+		  <marquee>Online Admission Going on Summer-2020**Apply Now**</marquee>
+		<h1>LATEST NEWS</h1>
+	</div>
+
+    <div class="card-container">
+        
+		
+        <div class="card">
+            <img class="img-style" src="black.jpg">
+            <div class="card-body">
+                <div class="card-title">
+                  C++ Programming
+                </div>
+                <div class="card-content">
+                 Ipsum dolores lorem sadipscing nonumy duo aliquyam. Lorem dolore et dolores est est sed rebum elitr labore, sit dolor magna.
+                </div>
+        
+            </div>
+			</div>
+
+			<div class="card">
+				<img class="img-style" src="black.jpg">
+				<div class="card-body">
+					<div class="card-title">
+					  C++ Programming
+					</div>
+					<div class="card-content">
+					 Ipsum dolores lorem sadipscing nonumy duo aliquyam. Lorem dolore et dolores est est sed rebum elitr labore, sit dolor magna.
+					</div>
+			
+				</div>
+				</div>
+
+
+				<div class="card">
+					<img class="img-style" src="black.jpg">
+					<div class="card-body">
+						<div class="card-title">
+						  C++ Programming
+						</div>
+						<div class="card-content">
+						 Ipsum dolores lorem sadipscing nonumy duo aliquyam. Lorem dolore et dolores est est sed rebum elitr labore, sit dolor magna.
+						</div>
+				
+					</div>
+					</div>
+
+
+
+					<div class="card">
+						<img class="img-style" src="black.jpg">
+						<div class="card-body">
+							<div class="card-title">
+							  C++ Programming
+							</div>
+							<div class="card-content">
+							 Ipsum dolores lorem sadipscing nonumy duo aliquyam. Lorem dolore et dolores est est sed rebum elitr labore, sit dolor magna.
+							</div>
+					
+						</div>
+						</div>
+			</div>
+
+			
+
+    <div class="row">
+      <div class="column">
+          <h1>Html</h1>
+          <p>Et dolor at invidunt eos sanctus sadipscing sed stet. Tempor dolor amet sed sit tempor amet, sit sed et et.</p>
+      </div>
+
+
+      <div class="column">
+        <h1>CSS</h1>
+        <p>Et dolor at invidunt eos sanctus sadipscing sed stet. Tempor dolor amet sed sit tempor amet, sit sed et et.</p>
+    </div>
+
+
+    <div class="column">
+        <h1>JS</h1>
+        <p>Et dolor at invidunt eos sanctus sadipscing sed stet. Tempor dolor amet sed sit tempor amet, sit sed et et.</p>
+    </div>
+
+
+    <div class="column">
+        <h1>Bootstrap</h1>
+        <p>Et dolor at invidunt eos sanctus sadipscing sed stet. Tempor dolor amet sed sit tempor amet, sit sed et et.</p>
+    </div>
+    </div>
+
+
+			
+	<div class="service">
+		
+	  <h1>NOTICE BOARD</h1>
+  </div>
+
+  <div class="card-container">
+	  
+	  
+	  <div class="card">
+		  <img class="img-style" src="black.jpg">
+		  <div class="card-body">
+			  <div class="card-title">
+				C++ Programming
+			  </div>
+			  <div class="card-content">
+			   Ipsum dolores lorem sadipscing nonumy duo aliquyam. Lorem dolore et dolores est est sed rebum elitr labore, sit dolor magna.
+			  </div>
+	  
+		  </div>
+		  </div>
+
+		  <div class="card">
+			  <img class="img-style" src="black.jpg">
+			  <div class="card-body">
+				  <div class="card-title">
+					C++ Programming
+				  </div>
+				  <div class="card-content">
+				   Ipsum dolores lorem sadipscing nonumy duo aliquyam. Lorem dolore et dolores est est sed rebum elitr labore, sit dolor magna.
+				  </div>
+		  
+			  </div>
+			  </div>
+
+
+			  <div class="card">
+				  <img class="img-style" src="black.jpg">
+				  <div class="card-body">
+					  <div class="card-title">
+						C++ Programming
+					  </div>
+					  <div class="card-content">
+					   Ipsum dolores lorem sadipscing nonumy duo aliquyam. Lorem dolore et dolores est est sed rebum elitr labore, sit dolor magna.
+					  </div>
+			  
+				  </div>
+				  </div>
+
+
+
+				  <div class="card">
+					  <img class="img-style" src="black.jpg">
+					  <div class="card-body">
+						  <div class="card-title">
+							C++ Programming
+						  </div>
+						  <div class="card-content">
+						   Ipsum dolores lorem sadipscing nonumy duo aliquyam. Lorem dolore et dolores est est sed rebum elitr labore, sit dolor magna.
+						  </div>
+				  
+					  </div>
+					  </div>
+		  </div>
+
+
+		  <div class="footer">
+			<div class="footer-menu col-6">
+				<a href="#">Home</a>
+				<a href="#about-me-id">About Me</a>
+				<a href="#skill-id">Skill</a>
+				<a href="#contact-id">Contact Me</a>
+			</div>
+	
+			<div class="footer-desc col-6">
+				&copy; 2020. Developed with <span style="color: red; font-size: 1.5rem;">❤</span> by zulkar.
+			</div>
+		</div>
+
+
+
+	</div>
+	
+</body>
+</html>
